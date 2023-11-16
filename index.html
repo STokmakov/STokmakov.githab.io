@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tokmakov CV</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <style> body { font-family: 'Caveat', sans-serif; } </style>
+    <link href="css/styles.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <p>
+    </p>
+      <main class="wrapper">
+
+        <article class="resume">
+          
+            
+            <section class=" about">
+              <div class="element-text">
+              <h1>Токмаков Сергей</h1>
+              <p>Учащийся курса <strong>Skillfactory</strong> "Fullstack разработчик на Python"</p>
+              <p>Я люблю программировать</p>
+              </div>
+            </section>
+
+            <section class=" photo">
+              <div class="element-photo">
+                  <img src="images/foto.jpeg"  alt="Моё фото" class="circle" />
+              </div>
+              <p></p>
+            </section>
+
+            
+            <section class="community">
+                  <p></p>
+                  <button type="button" class="collapsible"><h4>Мои социальные сети</h4></button>
+                  
+            <div class="content">
+                  
+                  <a href="https://vk.com/stokmakov" target="_blank">ВКОНТАКТЕ</a>
+                  |
+                  <a href="https://ok.ru/sergey.tokmakov3" target="_blank">Одноклассники</a>
+                  
+            </div>
+            <p></p>
+            </section>
+
+            <section class="grid-area work ">
+              
+              <h2>Опыт работы</h2>
+              
+              <div class="timeline">
+                <div class="container left">
+                  <div class="content2">
+                    <h2>2005</h2>
+                    <h3>Schools of the Kursk region</h3>
+                    <p>computer science teacher</p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content2">
+                    <h2>2010</h2>
+                    <h3>Ministry of Emergency Situations Kursk</h3>
+                    <p>network engineer</p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="content2">
+                    <h2>2022</h2>
+                    <h3>Invest-Alliance</h3>
+                    <p>head of the Infrastructure Administrators group</p>
+                  </div>
+                </div>
+              </div>
+  
+            </section>
+
+            <section class="grid-area skills">
+              <h2>Skills</h2>
+              <p>HTML</p>
+              <div class="container3">
+                <div class="skills2 html">90%</div>
+              </div> 
+
+              <p>CSS</p>
+              <div class="container3">
+                <div class="skills2 css">80%</div>
+              </div>
+
+              <p>Python</p>
+              <div class="container3">
+                <div class="skills2 python">75%</div>
+              </div>
+
+              <p>JavaScript</p>
+              <div class="container3">
+                <div class="skills2 js">65%</div>
+              </div> 
+
+              <p>SQL</p>
+              <div class="container3">
+                <div class="skills2 sql">60%</div>
+              </div>
+              
+            </section>
+
+            <section class="grid-area education">
+              <div class="card bg-yellow">
+                <h2>Образование</h2>
+                <ul class="list">
+                  <li>Kursk State University, Kursk (
+                    physics and computer science)</li>
+                  
+                </ul>
+              </div>
+            </section>
+            
+
+                
+            
+        </article>
+    </main>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
